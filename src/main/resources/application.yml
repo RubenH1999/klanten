@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5000/fietsen
+    username: fietsen
+    password: test
+  jpa:
+    show-sql: true
+server:
+  port: 8054

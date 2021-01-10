@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  fietsen:
+    image: postgres:12.2
+    container_name: fietsen
+    ports:
+      - 5000:5432
+    environment:
+      - POSTGRES_PASSWORD=test
+      - POSTGRES_USER=fietsen
+      - POSTGRES_DB=fietsen
