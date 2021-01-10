@@ -25,8 +25,8 @@ public class Klant {
     public Klant() {
     }
 
-    public Klant(Long id, String voornaam, String achternaam, String klantnummer, String gsmNummer, String email, String bedrijf) {
-        this.id = id;
+    public Klant(String voornaam, String achternaam, String klantnummer, String gsmNummer, String email, String bedrijf) {
+
         this.voornaam = voornaam;
         this.achternaam = achternaam;
         this.klantnummer = klantnummer;

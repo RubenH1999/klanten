@@ -20,8 +20,8 @@ public class KlantController {
         return klantRepository.findAll();
     }
 
-    @GetMapping("/klantnummer")
-    public Klant getKlantByKlantnummer(@RequestParam String klantnummer) {
+    @GetMapping("/klantnummer/{klantnummer}")
+    public Klant getKlantByKlantnummer(@PathVariable String klantnummer) {
         return klantRepository.findKlantenByKlantnummer(klantnummer);
     }
 
